@@ -1,0 +1,25 @@
+[
+    {
+        "predicate": "All",
+        "conditions": [
+            {"field": "sender", "predicate": "equals", "value": "neha281432reddy@gmail.com"},
+            {"field": "subject", "predicate": "contains", "value": "Acquisition"},
+            {"field": "date_received", "predicate": "less than", "value": "2"}
+        ],
+        "actions": [
+            {"action": "move_to_inbox"},
+            {"action": "mark_as_read"},
+            {"action": "print_email_info", "message": "Old email: {email_id} received on {date_received}"}
+        ]
+    },
+    {
+        "predicate": "Any",
+        "conditions": [
+            {"field": "snippet", "predicate": "contains", "value": "mail"},
+            {"field": "date_received", "predicate": "less than", "value": "7"}
+        ],
+        "actions": [
+            {"action": "print_email_info", "message": "Urgent or old email: {email_id} received on {date_received}"}
+        ]
+    }
+]
