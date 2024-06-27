@@ -15,6 +15,32 @@ pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-pyt
 
 ## Installation
 
+1. Create a virtual environment:
+    ```sh
+    python -m venv venv
+    source venv/bin/activate
+    ```
+
+2. Install dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+3. Set up Gmail API credentials and place `credentials.json` in the project directory.
+
+## Configuration
+
+- Add rules in `rules.json` file.
+
+## Testing
+
+- Run tests:
+    ```sh
+    pytest
+    ```
+
+## Installation
+
 1. Clone the repository or download the script files.
 2. Install the required libraries using pip:
    pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
