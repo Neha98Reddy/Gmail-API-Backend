@@ -4,6 +4,10 @@
 
 This Python script integrates with the Gmail API to fetch emails, store them in an SQLite database, and process them based on rules defined in a JSON file.
 
+## Install required libraries
+
+pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client sqlalchemy
+
 ## Prerequisites
 
 1. Python 3 installed on your machine.
